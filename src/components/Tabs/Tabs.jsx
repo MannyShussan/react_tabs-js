@@ -6,7 +6,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   let activeTab = activeTabId;
 
   if (tabActive === undefined && tabs.length !== 0) {
-    tabActive = { ...Tabs[0] };
+    tabActive = { ...tabs[0] };
     activeTab = tabs[0].id;
   }
 
